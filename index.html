@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Dreamfly</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <img src = "/svg/logo.svg" class="logo">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="form-box">
+            <div class="booking-form">
+                <h1 class="booking-form__h1">Find a flight for yourself</h1>
+                <div class="booking-form__grid">
+                    <input type="text" class="button input-field" placeholder = "Miejsce wylotu">
+                    <input type="text" class="button input-field" placeholder = "Miejsce przylotu">
+                    <input class="button input-field" onfocus="(this.type='date')" placeholder = "Data wylotu" name="validation">
+                    <input type="text" onkeypress='/^(?!00)([1-9][0-9]*)$/' maxlength="2" class="button passenger-input" placeholder = "Ilość osób"/>
+                    <!-- <input id="number" type="number" class="button passenger-input" placeholder = "Ilość osób" min="1" step="1" max="10" > -->
+                    <!-- <input type="text" onkeypress="return onlyNumberKey(event)" maxlength="2" class="button passenger-input" placeholder = "Ilość osób"/> -->
+                    <button class="button__confirm-button" onclick="location.href='flights.html'">Szukaj lotów</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/hamburger-menu.js"></script>
+</body>
+</html>
